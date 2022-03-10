@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+        http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+    <display-name>Projet SSPR</display-name>
+        <servlet>
+            <servlet-name>AdminControllerServlet</servlet-name>
+            <servlet-class>AdminController</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>AdminControllerServlet</servlet-name>
+            <url-pattern>/admin</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>EmployeControllerServlet</servlet-name>
+            <servlet-class>EmployeController</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>EmployeControllerServlet</servlet-name>
+            <url-pattern>/emp</url-pattern>
+        </servlet-mapping>
+
+</web-app>
